@@ -4,11 +4,11 @@
 
 ### Welcome
 
-[This is the text of my opening keynote at Gophercon 2015. [The video is available here.](https://www.youtube.com/watch?v=XvZOdpd_9tc)]
+[이건 제 Gophercon 2015 오프닝 키노트의 문서본입니다. [키노트 비디오는 여기서 볼 수 있습니다.](https://www.youtube.com/watch?v=XvZOdpd_9tc)]
 
-Thank you all for traveling to Denver to be here, and thank you to everyone watching on video. If this is your first Gophercon, welcome. If you were here last year, welcome back. Thank you to the organizers for all the work it takes to make a conference like this happen. I am thrilled to be here and to be able to talk to all of you.
+이 자리에 참석하기 위해 덴버까지 와주셔서 감사합니다, 그리고 비디오로 이 영상을 보고 계신 분들께도 감사의 말씀을 드립니다. 여러분의 첫번째 Gophercon 이라면, 환영합니다. 작년에도 오셨었다면, 잘 돌아오셨습니다. 운영자 분들께도 이런 행사가 열릴 수 있게 해주신 모든 일에 감사드립니다. 여기 있게 되고 여러분 모두에게 발표를 할 수 있게 되어 신나네요.
 
-I am the tech lead for the Go project and the Go team at Google. I share that role with Rob Pike. In that role, I spend a lot of time thinking about the overall Go open source project, in particular the way it runs, what it means to be open source, and the interaction between contributors inside and outside Google. Today I want to share with you how I see the Go project as a whole and then based on that explain how I see the Go open source project evolving.
+저는 구글의 Go 프로젝트와 Go 팀의 기술 리더입니다. 이 역할을 Rob Pike 와 함께 하고 있구요. 이 역할에서, 저는 Go 오픈소스 프로젝트에 대한 전반적인 것들, 특히 이게 어떻게 굴러가는지, 오픈소스가 되는게 무슨 의미를 갖는지, 그리고 구글 내외의 기여자들과의 상호작용에 대해 생각하는데에 많은 시간을 보냅니다. 오늘 저는 제가 Go 프로젝트를 어떻게 생각하는지 공유하고, 거기에 기반해서 제가 Go 오픈소스 프로젝트의 발전을 어떻게 바라보는지 설명하겠습니다.
 
 ### Why Go?
 
