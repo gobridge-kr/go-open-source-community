@@ -4,33 +4,33 @@
 
 ### Welcome
 
-[This is the text of my opening keynote at Gophercon 2015. [The video is available here.](https://www.youtube.com/watch?v=XvZOdpd_9tc)]
+[이건 제 Gophercon 2015 오프닝 키노트의 문서본입니다. [키노트 비디오는 여기서 볼 수 있습니다.](https://www.youtube.com/watch?v=XvZOdpd_9tc)]
 
-Thank you all for traveling to Denver to be here, and thank you to everyone watching on video. If this is your first Gophercon, welcome. If you were here last year, welcome back. Thank you to the organizers for all the work it takes to make a conference like this happen. I am thrilled to be here and to be able to talk to all of you.
+이 자리에 참석하기 위해 덴버까지 와주셔서 감사합니다, 그리고 비디오로 이 영상을 보고 계신 분들께도 감사의 말씀을 드립니다. 여러분의 첫번째 Gophercon 이라면, 환영합니다. 작년에도 오셨었다면, 잘 돌아오셨습니다. 운영자 분들께도 이런 행사가 열릴 수 있게 해주신 모든 일에 감사드립니다. 여기 있게 되고 여러분 모두에게 발표를 할 수 있게 되어 신나네요.
 
-I am the tech lead for the Go project and the Go team at Google. I share that role with Rob Pike. In that role, I spend a lot of time thinking about the overall Go open source project, in particular the way it runs, what it means to be open source, and the interaction between contributors inside and outside Google. Today I want to share with you how I see the Go project as a whole and then based on that explain how I see the Go open source project evolving.
+저는 구글의 Go 프로젝트와 Go 팀의 기술 리더입니다. 이 역할을 Rob Pike 와 함께 하고 있구요. 이 역할에서, 저는 Go 오픈소스 프로젝트에 대한 전반적인 것들, 특히 이게 어떻게 굴러가는지, 오픈소스가 되는게 무슨 의미를 갖는지, 그리고 구글 내외의 기여자들과의 상호작용에 대해 생각하는데에 많은 시간을 보냅니다. 오늘 저는 제가 Go 프로젝트를 어떻게 생각하는지 공유하고, 거기에 기반해서 제가 Go 오픈소스 프로젝트의 발전을 어떻게 바라보는지 설명하겠습니다.
 
 ### Why Go?
 
-To get started, we have to go back to the beginning. Why did we start working on Go?
+시작하기에 앞서, 프로젝트의 시작으로 돌아가 보겠습니다. 우리는 왜 Go 프로젝트를 시작했을까요?
 
-Go is an attempt to make programmers more productive. We wanted to improve the software development process at Google, but the problems Google has are not unique to Google.
+Go 는 프로그래머들을 더 생산적으로 만들려는 시도입니다. 우리는 구글의 소프트웨어 개발 프로세스를 개선하고 싶었습니다만, 구글이 가지고 있던 문제는 구글만의 것이 아니었습니다.
 
-There were two overarching goals.
+두개의 가장 중요한 목표가 있었습니다.
 
-The first goal is to make a better language to meet the challenges of scalable concurrency. By scalable concurrency I mean software that deals with many concerns simultaneously, such as coordinating a thousand back end servers by sending network traffic back and forth.
+첫번째 목표는 확장 가능한 동시성 문제를 해결할 수 있는 더 나은 언어를 만드는 것이었습니다. 확장 가능한 동시성이란 말로 제가 의미하는건 천개의 백엔드 서버를 네트워크 트래픽을 앞뒤로 보냄으로써 조정하는 것과 같이 많은 문제를 동시적으로 처리하는 소프트웨어입니다.
 
-Today, that kind of software has a shorter name: we call it cloud software. It's fair to say that Go was designed for the cloud before clouds ran software.
+오늘날, 그런 종류의 소프트웨어는 더 짧은 이름을 가지고 있죠: 우린 그걸 클라우드 소프트웨어라고 부릅니다. Go 는 클라우드가 소프트웨어를 돌리기 전부터 클라우드를 위해 설계되었다고 해도 무방합니다.
 
-The larger goal is to make a better environment to meet the challenges of scalable software development, software worked on and used by many people, with limited coordination between them, and maintained for years. At Google we have thousands of engineers writing and sharing their code with each other, trying to get their work done, reusing the work of others as much as possible, and working in a code base with a history dating back over ten years. Engineers often work on or at least look at code originally written by someone else, or that they wrote years ago, which often amounts to the same thing.
+더 큰 목표는 확장 가능한, 동작하고 있고 많은 사람들에 의해 사용되고 있는, 협동이 제한되어 있는, 그리고 수년간 유지되어오고 있는 소프트웨어의 개발에서의 도전 과제를 해결할 수 있는 더 나은 환경을 만드는 것이었습니다. 구글에는 수천명의 엔지니어가 있는데, 이들은 코드를 작성하고 서로 공유하고 일이 완료되도록 노력하고 남들의 작업물을 가능한 재사용하고 십여년이 넘게 오래된 역사를 갖는 코드베이스 위에서 작업하고 있습니다. 엔지니어들은 종종 남들에 의해 작성되었거나 그들이 몇년 전에 작성해서 남이 작성한 것이나 마찬가지인 코드 위에서 작업하거나 최소한 그 코드를 들여다 봅니다. 
 
-That situation inside Google has a lot in common with large scale, modern open source development as practiced on sites like GitHub. Because of this, Go is a great fit for open source projects, helping them accept and manage contributions from a large community over a long period of time.
+구글 안의 이 상황은 GitHub 같은 곳에서 확인된 것처럼 커다란 현대 오픈소스 개발 과정에 흔합니다. 이 때문에, Go 는 오픈소스 프로젝트에 잘 맞고, 오랜 기간 커다란 커뮤니티로부터의 기여를 관리하고 받아들일 수 있었습니다.
 
-I believe much of Go's success is explained by the fact that Go is a great fit for cloud software, Go is a great fit for open source projects, and, serendipitously, both of those are growing in popularity and importance in the software industry.
+저는 Go 의 성공이 Go 가 클라우드 소프트웨어에 잘 맞고, Go 가 오픈소스 프로젝트에 잘 맞으며, 우연히도, 이 두가지가 소프트웨어 업계에서 중요성과 대중성 측면에서 성장하고 있다는 사실로 설명된다고 믿습니다.
 
-Other people have made similar observations. Here are two. Last year, on RedMonk.com, Donnie Berkholz wrote about “[Go as the emerging language of cloud infrastructure](http://redmonk.com/dberkholz/2014/03/18/go-the-emerging-language-of-cloud-infrastructure/),” observing that “[Go's] marquee projects ... are cloud-centric or otherwise made for dealing with distributed systems or transient environments.”
+다른 사람들도 비슷한 관찰을 했습니다. 여기 두개의 관찰이 있습니다. 작년, RedMonk.com 에서, Donnie Berkholz 는 “[Go as the emerging language of cloud infrastructure](http://redmonk.com/dberkholz/2014/03/18/go-the-emerging-language-of-cloud-infrastructure/)” 라는 글을 썼는데, 여기서 “[Go] 프로젝트는 ... 클라우드 위주이거나 분산 시스템이나 영구적이지 않은 환경들을 처리하기 위해 만들어졌습니다.” 라고 했습니다.
 
-This year, on Texlution.com, the author wrote an article titled “[Why Golang is doomed to succeed](https://texlution.com/post/why-go-is-doomed-to-succeed/),” pointing out that this focus on large-scale development was possibly even better suited to open source than to Google itself: “This open source fitness is why I think you are about to see more and more Go around ...”
+올해, Texlution.com 에서, 이 사람은 “[Why Golang is doomed to succeed](https://texlution.com/post/why-go-is-doomed-to-succeed/)” 라는 글을 썼는데, 여기서는 이 거대 규모 개발에 대한 집중은 어쩌면 구글 스스로보다 오픈소스에 더 잘 맞을수도 있다고 했습니다: “이 오픈소스에의 적합성은 여러분이 더 많은 Go 프로그램을 주변에서 보게 될 것이라고 생각하는 이유입니다 ... ”
 
 ### The Go Balance
 
