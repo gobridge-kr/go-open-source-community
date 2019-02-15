@@ -34,19 +34,22 @@ Go 는 프로그래머들을 더 생산적으로 만들려는 시도입니다. �
 
 ### The Go Balance
 
-How does Go accomplish those things?
+Go 는 어떻게 그것들을 이룰까요?
 
-How does it make scalable concurrency and scalable software development easier?
+어떻게 확장성 있는 동시성과 확장성 있는 소프트웨어 개발을 쉽게 만들었을까요?
 
-Most people answer this question by talking about channels and goroutines, and interfaces, and fast builds, and the go command, and good tool support. Those are all important parts of the answer, but I think there is a broader idea behind them.
+대부분의 사람들이 이 질문에 대해 채널과 고루틴, 인터페이스, 빠른 빌드, go 명령,
+그리고 좋은 도구 지원에 대해 이야기하는 것으로 답합니다. 그것들은 모두 이
+질문에 대한 대답의 중요한 부분들입니다만, 저는 그 뒤에 더 넓은 아이디어가
+있다고 생각합니다.
 
-I think of that idea as Go's balance. There are competing concerns in any software design, and there is a very natural tendency to try to solve all the problems you foresee. In Go, we have explicitly tried not to solve everything. Instead, we've tried to do just enough that you can build your own custom solutions easily.
+전 그 아이디어를 Go 의 균형이라고 생각합니다. 모든 소프트웨어 설계에는 상충되는 문제가 있고, 여러분이 앞으로 보게될 모든 문제를 해결하려는 자연스런 경향이 있게 마련입니다. 그러는 대신, 우리는 여러분이 자신의 문제에 대한 각자의 해결책을 쉽게 만들기 충분하게만 하려고 했습니다.
 
-The way I would summarize Go's chosen balance is this: __Do Less. Enable More.__
+제가 Go 의 선택된 균형을 요약하자면 이렇습니다: __덜 하라. 더 가능하게 하라.__
 
-Do less, but enable more.
+덜 하되, 더 가능하게 하라.
 
-Go can't do everything. We shouldn't try. But if we work at it, Go can probably do a few things well. If we select those things carefully, we can lay a foundation on which developers can easily build the solutions and tools they need, and ideally can interoperate with the solutions and tools built by others.
+Go 는 모든걸 할 수는 없습니다. 우린 그래선 안됩니다. 하지만 우리가 그걸 하려 한다면, Go 는 몇가지 일들을 잘 할 겁니다. 우리가 그것들을 주의깊게 선택한다면, 우리는 개발자들이 그들에게 필요한, 그리고 이상적으로는 다른 사람들이 만든 해결책과 도구들과 함께 사용될 수 있는, 해결책과 도구들을 쉽게 만들 수 있는 토대를 줄 수 있습니다.
 
 ### Examples
 
