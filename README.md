@@ -89,29 +89,29 @@ Go 는 이 문제가 없습니다. 우린 이 언어가 gofmt 를 사용할 수 
 
 ### Why is Go open source?
 
-But first, as I said earlier, I want to explain how I see the balance of Do Less and Enable More guiding our work on the broader Go open source project. To do that, I need to start with why Go is open source at all.
+하지만 먼저, 앞서 이야기 했듯, 덜 하고 더 가능하게 하라의 균형이 더 넓은 Go 오픈소스 프로젝트에의 우리의 작업을 가이드 하는지 설명하고자 합니다. 그러기 위해선, 왜 Go 가 오픈소스가 되었는지를 이야기해야겠죠.
 
-Google pays me and others to work on Go, because, if Google's programmers are more productive, Google can build products faster, maintain them more easily, and so on. But why open source Go? Why should Google share this benefit with the world?
+구글은 저와 다른 사람들에게 Go 를 위해 일하라고 돈을 주는데, 왜냐하면, 구글의 프로그래머들이 더 생산적이 되면, 구글은 제품을 더 빨리 만들고, 그것들을 더 쉽게 관리하고, 그럴 수 있기 때문입니다. 하지만 왜 Go 를 오픈소스로 했을까요? 왜 구글은 이 이익을 세계와 공유해야 했을까요?
 
-Of course, many of us worked on open source projects before Go, and we naturally wanted Go to be part of that open source world. But our preferences are not a business justification. The business justification is that Go is open source because that's the only way that Go can succeed. We, the team that built Go within Google, knew this from day one. We knew that Go had to be made available to as many people as possible for it to succeed.
+물론, 우리 중 많은 사람들이 Go 전에도 오픈소스 프로젝트에 참여했고, 우린 자연스럽게 Go 가 이 오픈소스 세계의 일부가 되길 바랬습니다. 하지만 우리의 선호도가 사업적 정당성은 아닙니다. 이 사업적 정당성은 Go 가 오픈소스가 되는게 Go 가 성공할 수 있는 유일한 방법이었다는 것입니다. 구글에서 Go 를 만든 우리 팀은 이걸 첫날부터 알았습니다. 우린 Go 가 성공하기 위해선 가능한 많은 사람들에게 사용될 수 있어야 한다는 것을 알았습니다.
 
-Closed languages die.
+폐쇄된 언어는 죽습니다.
 
-A language needs large, broad communities.
+언어는 크고 넓은 커뮤니티를 필요로 합니다.
 
-A language needs lots of people writing lots of software, so that when you need a particular tool or library, there's a good chance it has already been written, by someone who knows the topic better than you, and who spent more time than you have to make it great.
+언어는 여러분이 특정 도구나 라이브러리가 필요할 때 그게 이미 그 주제를 여러분보다 잘 아는, 그리고 그걸 훌륭하게 만들기 위해 여러분보다 많은 시간을 쏟은 다른 누군가에 의해 만들어져 있게끔 많은 소프트웨어를 만드는 많은 사람을 필요로 합니다.
 
-A language needs lots of people reporting bugs, so that problems are identified and fixed quickly. Because of the much larger user base, the Go compilers are much more robust and spec-compliant than the Plan 9 C compilers they're loosely based on ever were.
+언어는 문제가 빠르게 정의되고 고쳐질 수 있게끔 버그를 보고하는 많은 사람을 필요로 합니다. Plan 9 C 컴파일러에 비해서 Go 컴파일러는 훨씬 사용자가 많기 때문에 훨씬 안정적이고 표준을 더 잘 따릅니다.
 
-A language needs lots of people using it for lots of different purposes, so that the language doesn't overfit to one use case and end up useless when the technology landscape changes.
+언어는 한가지 사용처에만 과하게 적합해서 기술 환경이 변할 때 쓸모없지 않게끔 많은 다른 목적들로 사용하는 많은 사용자를 필요로 합니다.
 
-A language needs lots of people who want to learn it, so that there is a market for people to write books or teach courses, or run conferences like this one.
+언어는 그에 대한 책을 쓰거나 수업이나 이 컨퍼런스와 같은 컨퍼런스들을 여는 시장이 존재할 수 있게끔, 그걸 배우고자 하는 많은 사람을 필요로 합니다.
 
-None of this could have happened if Go had stayed within Google. Go would have suffocated inside Google, or inside any single company or closed environment.
+이 중 어떤 것도 Go 가 구글 내에만 있었다면 이뤄질 수 없었습니다. Go 는 구글 또는 어떤 회사나 폐쇄된 환경에서 질식사 했을 겁니다.
 
-Fundamentally, Go must be open, and Go needs you. Go can't succeed without all of you, without all the people using Go for all different kinds of projects all over the world.
+기본적으로, Go 는 공개되어야 하고, Go 는 여러분을 필요로 합니다. Go 는 여러분 모두가 없었다면, 전세계에서 모든 다른 종류의 프로젝트에 Go 를 사용하는 모든 사람이 없었다면 성공하지 못했을 겁니다.
 
-In turn, the Go team at Google could never be large enough to support the entire Go community. To keep scaling, we need to enable all this ``more'' while doing less. Open source is a huge part of that.
+결국, 구글의 Go 팀은 모든 Go 커뮤니티에 대한 지원을 할 수 있을 만큼 커지지도 못했을 겁니다. 확장을 유지하기 위해, 우린 덜 하면서 이 모든걸 ``더'' 가능하게 해야 합니다. 오픈소스는 그 큰 부분입니다.
 
 ### Go's open source
 
