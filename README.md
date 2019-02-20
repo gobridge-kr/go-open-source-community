@@ -117,15 +117,15 @@ Go 는 이 문제가 없습니다. 우린 이 언어가 gofmt 를 사용할 수 
 
 ### Go's open source
 
-What does open source mean? The minimum requirement is to open the source code, making it available under an open source license, and we've done that.
+오픈소스란 무슨 의미일까요? 최소한의 소스코드를 공개하고, 오픈소스 라이센스 하에 사용 가능하게 해야 하고, 우린 그렇게 했습니다.
 
-But we also opened our development process: since announcing Go, we've done all our development in public, on public mailing lists open to all. We accept and review source code contributions from anyone. The process is the same whether you work for Google or not. We maintain our bug tracker in public, we discuss and develop proposals for changes in public, and we work toward releases in public. The public source tree is the authoritative copy. Changes happen there first. They are only brought into Google's internal source tree later. For Go, being open source means that this is a collective effort that extends beyond Google, open to all.
+하지만 우린 우리의 개발 프로세스도 공개했습니다: Go 를 발표한 후, 우린 우리의 모든 개발을 공개적으로, 모두에게 공개된 공개 메일링 리스트를 통해 진행했습니다. 우린 모든 사람으로부터의 소스코드 기여를 리뷰하고 받아들였습니다. 이 프로세스는 여러분이 구글에서 일하는가 아닌가에 관계 없이 똑같이 적용되었습니다. 우린 우리의 버그 트래커를 공개적으로 운영했고, 변경사항을 공개적으로 제안하고 개선했으며, 공개적 릴리즈를 향해 작업했습니다. 공개 소스 트리는 정식 복사본입니다. 변경사항은 거기에 처음 적용됩니다. 그 변경사항들은 구글의 내부 소스트리로는 나중에야 들어옵니다. Go 에 있어서, 오픈소스가 된다는 것은 구글을 넘어서 모두에게 공개된 방식으로 확장되는 협력된 노력입니다.
 
-Any open source project starts with a few people, often just one, but with Go it was three: Robert Griesemer, Rob Pike, and Ken Thompson. They had a vision of what they wanted Go to be, what they thought Go could do better than existing languages, and Robert will talk more about that tomorrow morning. I was the next person to join the team, and then Ian Taylor, and then, one by one, we've ended up where we are today, with hundreds of contributors.
+모든 오픈소스 프로젝트가 적은 사람들에 의해 시작되고, 어떨 땐 한명에 의해 시작되는데, Go 의 경우엔 세명이었습니다: Robert Griesemer, Rob Pike, 그리고 Ken Thompson. 그들은 Go 가 어떻게 되길 바라는지, Go 가 현존하는 언어들보다 어떻게 더 나아질 수 있을지에 대한 비전을 가지고 있었는데, 이에 대해선 내일 아침에 Robert 가 더 이야기 할 겁니다. 저는 이 팀에 합류한 그 다음 사람이었고, 이어서 Ian Taylor, 그리고 한명씩 팀에 합류해서 결국 수백명의 기여자들과 함께 오늘날에 이르렀습니다.
 
-Thank You to the many people who have contributed code or ideas or bug reports to the Go project so far. We tried to list everyone we could in our space in the program today. If your name is not there, I apologize, but thank you.
+Go 프로젝트에 열심히 코드나 아이디어를 기여하거나 버그를 보고해준 많은 사람들에게 감사드립니다. 우린 가능한 많은 사람들을 오늘 프로그램 상의 공간에 나열하려 노력했습니다만, 여러분 이름이 거기 없다면 사과 드립니다만, 감사합니다.
 
-I believe the hundreds of contributors so far are working toward a shared vision of what Go can be. It's hard to put words to these things, but I did my best to explain one part of the vision earlier: Do Less, Enable More.
+저는 그 많은 수백명의 기여자들이 Go 가 어떻게 될 것인가에 대한 공유된 비전을 향해 일하고 있다고 생각합니다. 이런 것들에 대해 이루 설명하기가 어렵습니다만, 제가 그 비전의 한 부분을 설명하기 위한 최선의 노력을 했습니다: 덜 하고, 더 가능하게 하라.
 
 ### Google's role
 
