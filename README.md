@@ -115,39 +115,39 @@ Go 는 이 문제가 없습니다. 우린 이 언어가 gofmt 를 사용할 수 
 
 ### Go's open source
 
-What does open source mean? The minimum requirement is to open the source code, making it available under an open source license, and we've done that.
+오픈소스란 무슨 의미일까요? 최소한의 소스코드를 공개하고, 오픈소스 라이센스 하에 사용 가능하게 해야 하고, 우린 그렇게 했습니다.
 
-But we also opened our development process: since announcing Go, we've done all our development in public, on public mailing lists open to all. We accept and review source code contributions from anyone. The process is the same whether you work for Google or not. We maintain our bug tracker in public, we discuss and develop proposals for changes in public, and we work toward releases in public. The public source tree is the authoritative copy. Changes happen there first. They are only brought into Google's internal source tree later. For Go, being open source means that this is a collective effort that extends beyond Google, open to all.
+하지만 우린 우리의 개발 프로세스도 공개했습니다: Go 를 발표한 후, 우린 우리의 모든 개발을 공개적으로, 모두에게 공개된 공개 메일링 리스트를 통해 진행했습니다. 우린 모든 사람으로부터의 소스코드 기여를 리뷰하고 받아들였습니다. 이 프로세스는 여러분이 구글에서 일하는가 아닌가에 관계 없이 똑같이 적용되었습니다. 우린 우리의 버그 트래커를 공개적으로 운영했고, 변경사항을 공개적으로 제안하고 개선했으며, 공개적 릴리즈를 향해 작업했습니다. 공개 소스 트리는 정식 복사본입니다. 변경사항은 거기에 처음 적용됩니다. 그 변경사항들은 구글의 내부 소스트리로는 나중에야 들어옵니다. Go 에 있어서, 오픈소스가 된다는 것은 구글을 넘어서 모두에게 공개된 방식으로 확장되는 협력된 노력입니다.
 
-Any open source project starts with a few people, often just one, but with Go it was three: Robert Griesemer, Rob Pike, and Ken Thompson. They had a vision of what they wanted Go to be, what they thought Go could do better than existing languages, and Robert will talk more about that tomorrow morning. I was the next person to join the team, and then Ian Taylor, and then, one by one, we've ended up where we are today, with hundreds of contributors.
+모든 오픈소스 프로젝트가 적은 사람들에 의해 시작되고, 어떨 땐 한명에 의해 시작되는데, Go 의 경우엔 세명이었습니다: Robert Griesemer, Rob Pike, 그리고 Ken Thompson. 그들은 Go 가 어떻게 되길 바라는지, Go 가 현존하는 언어들보다 어떻게 더 나아질 수 있을지에 대한 비전을 가지고 있었는데, 이에 대해선 내일 아침에 Robert 가 더 이야기 할 겁니다. 저는 이 팀에 합류한 그 다음 사람이었고, 이어서 Ian Taylor, 그리고 한명씩 팀에 합류해서 결국 수백명의 기여자들과 함께 오늘날에 이르렀습니다.
 
-Thank You to the many people who have contributed code or ideas or bug reports to the Go project so far. We tried to list everyone we could in our space in the program today. If your name is not there, I apologize, but thank you.
+Go 프로젝트에 열심히 코드나 아이디어를 기여하거나 버그를 보고해준 많은 사람들에게 감사드립니다. 우린 가능한 많은 사람들을 오늘 프로그램 상의 공간에 나열하려 노력했습니다만, 여러분 이름이 거기 없다면 사과 드립니다만, 감사합니다.
 
-I believe the hundreds of contributors so far are working toward a shared vision of what Go can be. It's hard to put words to these things, but I did my best to explain one part of the vision earlier: Do Less, Enable More.
+저는 그 많은 수백명의 기여자들이 Go 가 어떻게 될 것인가에 대한 공유된 비전을 향해 일하고 있다고 생각합니다. 이런 것들에 대해 이루 설명하기가 어렵습니다만, 제가 그 비전의 한 부분을 설명하기 위한 최선의 노력을 했습니다: 덜 하고, 더 가능하게 하라.
 
 ### Google's role
 
-A natural question is: What is the role of the Go team at Google, compared to other contributors? I believe that role has changed over time, and it continues to change. The general trend is that over time the Go team at Google should be doing less and enabling more.
+자연스레 이런 질문이 나올 겁니다: 다른 기여자들과 비교해서, 구글의 Go 팀의 역할은 무엇인가? 그 역할은 시간에 따라 변화해 왔고, 앞으로도 변화해 갈 것이라고 믿습니다. 시간의 흐름에 따른 구글의 Go 팀의 역할의 일반적인 트렌드는 덜 하고 더 가능하게 하는 것입니다.
 
-In the very early days, before Go was known to the public, the Go team at Google was obviously working by itself. We wrote the first draft of everything: the specification, the compiler, the runtime, the standard library.
+Go 가 공개되기 전의 매우 초기에, 구글의 Go 팀은 당연하게도 스스로 일하고 있었습니다. 우린 모든것의 첫 버전을 만들었습니다: 기능 명세, 컴파일러, 런타임, 표준 라이브러리.
 
-Once Go was open sourced, though, our role began to change. The most important thing we needed to do was communicate our vision for Go. That's difficult, and we're still working at it.. The initial implementation was an important way to communicate that vision, as was the development work we led that resulted in Go 1, and the various blog posts, and articles, and talks we've published.
+하지만, Go 가 오픈소스로 공개된 후, 우리의 역할은 변하기 시작했습니다. 우리가 해야하는 가장 중요한 일은 Go 를 위한 우리의 비전을 공유하는 것이었습니다. 이건 어려운 일이고, 우린 여전히 이 일을 하고 있습니다.. 최초의 구현, Go 1 을 만들어내는데 사용된 개발 과정, 우리가 공개한 다양한 블로그 포스트, 기사, 발표들은 이 비전을 공유하기 위한 중요한 방법이었습니다.
 
-But as Rob said at Gophercon last year, "the language is done." Now we need to see how it works, to see how people use it, to see what people build. The focus now is on expanding the kind of work that Go can help with.
+하지만 작년에 Gophercon 에서 Rob 이 말했듯, "언어는 다 됐습니다." 이제 우리는 이게 어떻게 동작하는지, 사람들이 어떻게 쓰는지, 사람들이 이걸로 뭘 만드는지 봐야 합니다. 이제 우리는 Go 가 도움을 줄 수 있는 일들의 종류를 늘려 나가는데 집중하게 되었습니다.
 
-Google's primarily role is now to enable the community, to coordinate, to make sure changes work well together, and to keep Go true to the original vision.
+이제 구글의 본질적 역할은 커뮤니티를 구성 가능하게 하고, 협력하고, 변경사항이 서로 잘 동작함을 보장하고, Go 의 최초 비전을 향해 가는걸 지속하도록 하는 겁니다.
 
-Google's primary role is: Do Less. Enable More.
+구글의 기본적 역할은: 덜 하라. 더 가능하게 하라.
 
-I mentioned earlier that we'd rather have a small number of features that enable, say, 90% of the target use cases, and avoid the orders of magnitude more features necessary to reach 99 or 100%. We've been successful in applying that strategy to the areas of software that we know well. But if Go is to become useful in many new domains, we need experts in those areas to bring their expertise to our discussions, so that together we can design small adjustments that enable many new applications for Go.
+우리는 목표하는 사용처의, 말하자면 90% 를 가능하게 하는 적은 수의 기능들만을 가지려 노력했고, 99 또는 100%의 사용처를 위한 수십수백개의 기능들을 제거했다고 앞서 말씀드렸습니다. 우린 우리가 잘 아는 소프트웨어 영역들에 대해서는 이 전략을 성공적으로 적용했습니다. 하지만 Go 가 많은 새로운 영역에도 유용해 지려면, 우리의 토론에 전문 지식을 가져와 줄 그 영역에서의 전문가가 필요합니다, 함께 새로운 Go 어플리케이션들을 가능하게 할 작은 변경을 설계할 수 있게 말입니다.
 
-This shift applies not just to design but also to development. The role of the Go team at Google continues to shift more to one of guidance and less of pure development. I certainly spend much more time doing code reviews than writing code, more time processing bug reports than filing bug reports myself. We need to do less and enable more.
+이 변화는 설계만이 아니라 개발에도 적용됩니다. 구글의 Go 팀의 역할은 순수한 개발은 더 줄이고 지침을 더 내리는 형태로 변화하고 있습니다. 전 코드를 작성하기보다 코드 리뷰를 하는데 더 많은 시간을, 스스로 버그 레포트를 정리하기보다 버그 레포트를 처리하는데 더 많은 시간을 보내고 있습니다. 우린 덜 하고 더 많은 것을 가능하게 해야 합니다.
 
-As design and development shift to the broader Go community, one of the most important things we the original authors of Go can offer is consistency of vision, to help keep Go Go. The balance that we must strike is certainly subjective. For example, a mechanism for extensible syntax would be a way to enable more ways to write Go code, but that would run counter to our goal of having a consistent language without different dialects.
+설계와 개발이 더 넓은 Go 커뮤니티로 이동함에 따라, Go 의 최초 저자인 우리가 드릴 수 있는 가장 중요한 것들 중 하나는 비전의 일관성인데, 이게 Go 의 비전을 향한 발전을 도울 것이기 때문입니다. 우리가 절충해야 하는 것은 명약합니다. 예를 들어, 확장 가능한 syntax 을 위한 메커니즘은 Go 코드를 작성하는 많은 방법들을 가능하게 하는 방법일 겁니다만, 다른 은어 없이 일관적인 언어를 만들고자 하는 우리의 목표에 상충됩니다.
 
-We have to say no sometimes, perhaps more than in other language communities, but when we do, we aim to do so constructively and respectfully, to take that as an opportunity to clarify the vision for Go.
+우린 때때로 거부를 해야만 하는데, 이게 다른 언어 커뮤니티들보다 자주 그럴 수도 있겠지만, 우리가 그럴 때에는 이게 Go 의 비전을 분명히 하는 기회가 될 수 있게끔 건설적이고 예의 하르게 하고자 합니다.
 
-Of course, it's not all coordination and vision. Google still funds Go development work. Rick Hudson is going to talk later today about his work on reducing garbage collector latency, and Hana Kim is going to talk tomorrow about her work on bringing Go to mobile devices. But I want to make clear that, as much as possible, we aim to treat development funded by Google as equal to development funded by other companies or contributed by individuals using their spare time. We do this because we don't know where the next great idea will come from. Everyone contributing to Go should have the opportunity to be heard.
+물론, 모든게 협력과 비전은 아닙니다. 구글은 여전히 Go 개발 작업을 위해 비용을 대고 있습니다. Rick Hudson 은 오늘 garbage collector 반응시간을 줄인 그의 작업에 대해 발표할 거고, Hana Kim 은 내일 Go 를 모바일 기기로 가져오기 위해 진행한 그녀의 작업에 대해 발표할 겁니다. 하지만 전 우린 구글에 의해 비용을 지원받은 개발을 다른 회사에 의해 비용을 지원받은 개발이나 각자의 남는 시간을 활용한 개별적 기여를 모두 동등하게 다루려 한다는 걸 가능한한 분명히 하고자 합니다. 그렇게 하려는 이유는 다음의 훌륭한 아이디어가 어디서 나올지 모르기 때문입니다. Go 에 기여하는 모두에게 경청받을 기회가 있습니다.
 
 ### Examples
 
